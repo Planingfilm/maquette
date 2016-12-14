@@ -1,0 +1,24 @@
+{
+  "name": "prototypage_film",
+  "version": "1.0.0",
+  "description": "planification pour déterminer le meilleur choix pour le visionnement d'un film durant une soirée",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Planingfilm/maquette.git"
+  },
+  "keywords": [
+    "planifilm"
+  ],
+  "author": "Antoine; Raven; Yan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Planingfilm/maquette/issues"
+  },
+  "homepage": "https://github.com/Planingfilm/maquette#readme"
+}
