@@ -1,0 +1,1074 @@
+/*
+* Box Theme
+* Created by : Ahmed Eissa
+* website : www.ahmedessa.net
+* behance : https://www.behance.net/3essa
+*/
+/* Table of Content
+==================================================
+- Google fonts & font family -
+- General -
+- typography -
+- Preloader -
+- Header -
+- box intro section -
+- Portfoilo section -
+- Footer -
+- About page -
+- Services page -
+- contact page -
+- Portfolio single page -
+- Responsive media queries -
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
+@keyframes cssload-loader {
+  /* line 26, partials/_header.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 30, partials/_header.scss */
+  25% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 34, partials/_header.scss */
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 38, partials/_header.scss */
+  75% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  /* line 42, partials/_header.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes cssload-loader {
+  /* line 72, partials/_header.scss */
+  0% {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 76, partials/_header.scss */
+  25% {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 80, partials/_header.scss */
+  50% {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 84, partials/_header.scss */
+  75% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  /* line 88, partials/_header.scss */
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes cssload-loader {
+  /* line 95, partials/_header.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 99, partials/_header.scss */
+  25% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 103, partials/_header.scss */
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 107, partials/_header.scss */
+  75% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  /* line 111, partials/_header.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes cssload-loader-inner {
+  /* line 141, partials/_header.scss */
+  0% {
+    height: 0%;
+  }
+
+  /* line 145, partials/_header.scss */
+  25% {
+    height: 0%;
+  }
+
+  /* line 149, partials/_header.scss */
+  50% {
+    height: 100%;
+  }
+
+  /* line 153, partials/_header.scss */
+  75% {
+    height: 100%;
+  }
+
+  /* line 157, partials/_header.scss */
+  100% {
+    height: 0%;
+  }
+}
+@-ms-keyframes cssload-loader-inner {
+  /* line 187, partials/_header.scss */
+  0% {
+    height: 0%;
+  }
+
+  /* line 191, partials/_header.scss */
+  25% {
+    height: 0%;
+  }
+
+  /* line 195, partials/_header.scss */
+  50% {
+    height: 100%;
+  }
+
+  /* line 199, partials/_header.scss */
+  75% {
+    height: 100%;
+  }
+
+  /* line 203, partials/_header.scss */
+  100% {
+    height: 0%;
+  }
+}
+@-webkit-keyframes cssload-loader-inner {
+  /* line 210, partials/_header.scss */
+  0% {
+    height: 0%;
+  }
+
+  /* line 214, partials/_header.scss */
+  25% {
+    height: 0%;
+  }
+
+  /* line 218, partials/_header.scss */
+  50% {
+    height: 100%;
+  }
+
+  /* line 222, partials/_header.scss */
+  75% {
+    height: 100%;
+  }
+
+  /* line 226, partials/_header.scss */
+  100% {
+    height: 0%;
+  }
+}
+/* header
+==================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003258}}
+.box-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 80px;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003276}}
+.box-header.is-fixed {
+  position: fixed;
+  top: -80px;
+  background-color: transparent;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003285}}
+.box-header.is-visible {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003292}}
+.box-logo {
+  display: block;
+  padding: 12px 20px 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003297}}
+.box-primary-nav-trigger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  width: 100px;
+  padding-left: 1em;
+  background-color: transparent;
+  height: 30px;
+  line-height: 30px;
+  right: 10px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003303}}
+.box-primary-nav-trigger .box-menu-text {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: none;
+  font-size: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003310}}
+.box-primary-nav-trigger .box-menu-icon {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 40px;
+  height: 6px;
+  background-color: #FFD89F;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  list-style: none;
+  -webkit-box-shadow: -4px -4px 0px 0px #175175;
+  box-shadow: -4px -4px 0px 0px #175175;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003328}}
+.box-primary-nav-trigger .box-menu-icon::before, .box-primary-nav-trigger .box-menu-icon:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #FFD89F;
+  right: 0;
+  -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+  -webkit-transition: top .3s, background-color 0s, -webkit-transform .3s;
+  transition: top .3s, background-color 0s, -webkit-transform .3s;
+  transition: transform .3s, top .3s, background-color 0s;
+  -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s, -webkit-transform .3s;
+  transition: transform .3s, top .3s, background-color 0s, -webkit-transform .3s;
+  -webkit-box-shadow: -4px -4px 0px 0px #175175;
+  box-shadow: -4px -4px 0px 0px #175175;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003344}}
+.box-primary-nav-trigger .box-menu-icon::before {
+  top: -15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003347}}
+.box-primary-nav-trigger .box-menu-icon::after {
+  top: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003350}}
+.box-primary-nav-trigger .box-menu-icon.is-clicked {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003353}}
+.box-primary-nav-trigger .box-menu-icon.is-clicked::before, .box-primary-nav-trigger .box-menu-icon.is-clicked::after {
+  background-color: 393939;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003357}}
+.box-primary-nav-trigger .box-menu-icon.is-clicked::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003362}}
+.box-primary-nav-trigger .box-menu-icon.is-clicked::after {
+  top: 0;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003379}}
+.box-primary-nav-trigger .box-menu-text {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003382}}
+.box-primary-nav-trigger .box-menu-icon {
+  left: auto;
+  right: 1em;
+  -webkit-transform: translateX(0) translateY(-50%);
+  -ms-transform: translateX(0) translateY(-50%);
+  transform: translateX(0) translateY(-50%);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003390}}
+.box-primary-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 2;
+  text-align: center;
+  padding: 50px 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transition-property: -webkit-transform, -webkit-transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003413}}
+.box-primary-nav li {
+  font-size: 3em;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: .2em 0;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003421}}
+.box-primary-nav a {
+  display: inline-block;
+  padding: .4em 1em;
+  border-radius: 0.25em;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003430}}
+.box-primary-nav a:focus {
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003436}}
+.no-touch .box-primary-nav a:hover {
+  text-decoration: none;
+  color: #ddd;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003441}}
+.box-primary-nav {
+  padding: 150px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003442}}
+.box-primary-nav .box-label {
+  color: #17739b;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  margin: 2.4em 0 .8em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003449}}
+.box-primary-nav .box-social {
+  display: inline-block;
+  margin: 10px .4em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003452}}
+.box-primary-nav .box-social a {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003459}}
+.box-primary-nav.is-visible {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003464}}
+.box-primary-nav li {
+  font-size: 28px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/partials\/_header\.scss}line{font-family:\00003469}}
+.actif {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Google fonts & font family
+==================================================*/
+/* General
+==================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\0000310}}
+body {
+  padding: 70px auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\0000315}}
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background: #00bfe6;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #00bfe6), color-stop(30%, #00bfe6), color-stop(100%, #00345c));
+  background: -webkit-linear-gradient(top, #00bfe6 0%, #00bfe6 30%, #00345c 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bfe6), color-stop(30%, #00bfe6), to(#00345c));
+  background: linear-gradient(to bottom, #00bfe6 0%, #00bfe6 30%, #00345c 100%);
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\0000329}}
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\0000332}}
+.no-padding [class^="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\0000340}}
+a {
+  -webkit-transition: all .3s;
+  transition: all 0.3s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\0000347}}
+.container-fluid {
+  padding: 0px;
+}
+
+/*
+* Box Theme
+* Created by : Ahmed Eissa
+* website : www.ahmedessa.net
+* behance : https://www.behance.net/3essa
+*/
+/* Table of Content
+==================================================
+- Google fonts & font family -
+- General -
+- typography -
+- Preloader -
+- Header -
+- box intro section -
+- Portfoilo section -
+- Footer -
+- About page -
+- Services page -
+- contact page -
+- Portfolio single page -
+- Responsive media queries -
+*/
+@keyframes cssload-loader {
+  /* line 77, mainscss.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 81, mainscss.scss */
+  25% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 85, mainscss.scss */
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 89, mainscss.scss */
+  75% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  /* line 93, mainscss.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes cssload-loader {
+  /* line 123, mainscss.scss */
+  0% {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 127, mainscss.scss */
+  25% {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 131, mainscss.scss */
+  50% {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 135, mainscss.scss */
+  75% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  /* line 139, mainscss.scss */
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes cssload-loader {
+  /* line 146, mainscss.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 150, mainscss.scss */
+  25% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 154, mainscss.scss */
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  /* line 158, mainscss.scss */
+  75% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  /* line 162, mainscss.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes cssload-loader-inner {
+  /* line 192, mainscss.scss */
+  0% {
+    height: 0%;
+  }
+
+  /* line 196, mainscss.scss */
+  25% {
+    height: 0%;
+  }
+
+  /* line 200, mainscss.scss */
+  50% {
+    height: 100%;
+  }
+
+  /* line 204, mainscss.scss */
+  75% {
+    height: 100%;
+  }
+
+  /* line 208, mainscss.scss */
+  100% {
+    height: 0%;
+  }
+}
+@-ms-keyframes cssload-loader-inner {
+  /* line 238, mainscss.scss */
+  0% {
+    height: 0%;
+  }
+
+  /* line 242, mainscss.scss */
+  25% {
+    height: 0%;
+  }
+
+  /* line 246, mainscss.scss */
+  50% {
+    height: 100%;
+  }
+
+  /* line 250, mainscss.scss */
+  75% {
+    height: 100%;
+  }
+
+  /* line 254, mainscss.scss */
+  100% {
+    height: 0%;
+  }
+}
+@-webkit-keyframes cssload-loader-inner {
+  /* line 261, mainscss.scss */
+  0% {
+    height: 0%;
+  }
+
+  /* line 265, mainscss.scss */
+  25% {
+    height: 0%;
+  }
+
+  /* line 269, mainscss.scss */
+  50% {
+    height: 100%;
+  }
+
+  /* line 273, mainscss.scss */
+  75% {
+    height: 100%;
+  }
+
+  /* line 277, mainscss.scss */
+  100% {
+    height: 0%;
+  }
+}
+/* header
+==================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003311}}
+.box-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 80px;
+  background: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003329}}
+.box-header.is-fixed {
+  position: fixed;
+  top: -80px;
+  background-color: transparent;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003338}}
+.box-header.is-visible {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003345}}
+.box-logo {
+  display: block;
+  padding: 12px 20px 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003350}}
+.box-primary-nav-trigger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  width: 100px;
+  padding-left: 1em;
+  background-color: transparent;
+  height: 30px;
+  line-height: 30px;
+  right: 10px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003356}}
+.box-primary-nav-trigger .box-menu-text {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: none;
+  font-size: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003363}}
+.box-primary-nav-trigger .box-menu-icon {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 40px;
+  height: 6px;
+  background-color: #FFD89F;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  list-style: none;
+  -webkit-box-shadow: -4px -4px 0px 0px #175175;
+  box-shadow: -4px -4px 0px 0px #175175;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003381}}
+.box-primary-nav-trigger .box-menu-icon::before, .box-primary-nav-trigger .box-menu-icon:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #FFD89F;
+  right: 0;
+  -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+  -webkit-transition: top .3s, background-color 0s, -webkit-transform .3s;
+  transition: top .3s, background-color 0s, -webkit-transform .3s;
+  transition: transform .3s, top .3s, background-color 0s;
+  -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s, -webkit-transform .3s;
+  transition: transform .3s, top .3s, background-color 0s, -webkit-transform .3s;
+  -webkit-box-shadow: -4px -4px 0px 0px #175175;
+  box-shadow: -4px -4px 0px 0px #175175;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003397}}
+.box-primary-nav-trigger .box-menu-icon::before {
+  top: -15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003400}}
+.box-primary-nav-trigger .box-menu-icon::after {
+  top: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003403}}
+.box-primary-nav-trigger .box-menu-icon.is-clicked {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003406}}
+.box-primary-nav-trigger .box-menu-icon.is-clicked::before, .box-primary-nav-trigger .box-menu-icon.is-clicked::after {
+  background-color: 393939;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003410}}
+.box-primary-nav-trigger .box-menu-icon.is-clicked::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003415}}
+.box-primary-nav-trigger .box-menu-icon.is-clicked::after {
+  top: 0;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003432}}
+.box-primary-nav-trigger .box-menu-text {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003435}}
+.box-primary-nav-trigger .box-menu-icon {
+  left: auto;
+  right: 1em;
+  -webkit-transform: translateX(0) translateY(-50%);
+  -ms-transform: translateX(0) translateY(-50%);
+  transform: translateX(0) translateY(-50%);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003443}}
+.box-primary-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 2;
+  text-align: center;
+  padding: 50px 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transition-property: -webkit-transform, -webkit-transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003466}}
+.box-primary-nav li {
+  font-size: 3em;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: .2em 0;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003474}}
+.box-primary-nav a {
+  display: inline-block;
+  padding: .4em 1em;
+  border-radius: 0.25em;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003483}}
+.box-primary-nav a:focus {
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003489}}
+.no-touch .box-primary-nav a:hover {
+  text-decoration: none;
+  color: #ddd;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003494}}
+.box-primary-nav {
+  padding: 150px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003495}}
+.box-primary-nav .box-label {
+  color: #17739b;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 17px;
+  margin: 2.4em 0 .8em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003502}}
+.box-primary-nav .box-social {
+  display: inline-block;
+  margin: 10px .4em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003505}}
+.box-primary-nav .box-social a {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003512}}
+.box-primary-nav.is-visible {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003517}}
+.box-primary-nav li {
+  font-size: 28px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003522}}
+.actif {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* etape2
+    ==================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003532}}
+#data-figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003541}}
+#data-figure figure.svgbulle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003549}}
+#data-figure figure.svgbulle p {
+  position: relative;
+  left: 10%;
+  top: 10%;
+  font-size: 44px;
+  color: #ccc;
+  text-align: left;
+  padding: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003560}}
+#data-figure .main_footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: purple;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003570}}
+#data-figure .main_footer .btn {
+  width: 100%;
+  background-color: green !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003573}}
+#data-figure .main_footer .btn a {
+  color: green;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003578}}
+#data-figure .main_footer i.fa {
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003582}}
+#data-figure .main_footer a.active {
+  color: red;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003586}}
+#data-figure .main_footer a.inactive {
+  color: #555;
+}
+
+/* Responsive media queries
+    ==================================================*/
+@media (max-width: 991px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003598}}
+  .col-md-6 h3 {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 670px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003604}}
+  .box-headline {
+    font-size: 100px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003607}}
+  .box-intro h5 {
+    font-size: 12px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003610}}
+  .box-primary-nav {
+    padding: 80px 0 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003611}}
+  .box-primary-nav a {
+    padding: 5px 1em;
+    font-size: 0.8em;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003616}}
+  .box-primary-nav .box-social a {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 520px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003623}}
+  .box-headline {
+    font-size: 80px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003626}}
+  .box-intro h5 {
+    font-size: 12px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003629}}
+  .main-container {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 420px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003635}}
+  .box-headline {
+    font-size: 50px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Antoinechouinard\/Documents\/Programmation\/Web\/prototype\/maquette-bootstrap\/scss\/mainscss\.scss}line{font-family:\00003638}}
+  .box-intro h5 {
+    font-size: 12px;
+  }
+}
